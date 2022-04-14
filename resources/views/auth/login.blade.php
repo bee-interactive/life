@@ -1,28 +1,23 @@
 <x-guest-layout>
     <x-auth-card>
-        <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
-
-        <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
-            <!-- Email Address -->
             <div>
-                <x-input id="email" placeholder="Enter your email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="email" />
+                <x-input id="email" placeholder="Enter your email" class="block w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="email" />
             </div>
 
-            <!-- Password -->
             <div class="mt-6">
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" placeholder="Enter your password" required autocomplete="current-password" />
+                <x-input id="password" class="block w-full" type="password" name="password" placeholder="Enter your password" required autocomplete="current-password" />
             </div>
 
             <div class="flex justify-between">
                 <div class="block mt-4">
                     <label for="remember_me" class="inline-flex items-center">
-                        <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-life shadow-sm focus:border-life focus:ring focus:ring-life focus:ring-opacity-50" name="remember">
+                        <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-life shadow-sm focus:border-life focus:ring-2 focus:ring-life focus:ring-opacity-90" name="remember">
                         <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                     </label>
                 </div>

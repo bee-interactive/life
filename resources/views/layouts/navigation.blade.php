@@ -1,9 +1,10 @@
 <nav x-data="{ open: false }">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex w-full justify-center items-center h-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
+        <div class="flex w-full justify-center items-center">
             <h1 class="text-xl text-center font-semibold text-life-dark-gray">{{ Auth::user()->name }}</h1>
         </div>
+        <p class="text-center text-sm text-[#82868a]">Vous avez 124 éléments enregistrés</p>
     </div>
 
     <!-- Responsive Navigation Menu -->
