@@ -2,7 +2,6 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
@@ -10,8 +9,16 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: [...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                life: {
+                    DEFAULT: '#02b98d',
+                    'dark': '#05a880',
+                    'gray': '#ecf0f3',
+                    'dark-gray': '#474c52',
+                }
+            }
         },
     },
 
