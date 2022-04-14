@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Medium.eot');
+    src: local('Lufga Medium'), local('Lufga-Medium'),
+        url('/fonts/lufga/Lufga-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Medium.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Medium.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-ExtraBoldItalic.eot');
+    src: local('Lufga ExtraBold Italic'), local('Lufga-ExtraBoldItalic'),
+        url('/fonts/lufga/Lufga-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-ExtraBoldItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-ExtraBoldItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-ExtraLight.eot');
+    src: local('Lufga ExtraLight'), local('Lufga-ExtraLight'),
+        url('/fonts/lufga/Lufga-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-ExtraLight.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-ExtraLight.woff') format('woff'),
+        url('/fonts/lufga/Lufga-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-BlackItalic.eot');
+    src: local('Lufga Black Italic'), local('Lufga-BlackItalic'),
+        url('/fonts/lufga/Lufga-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-BlackItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-BlackItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Black.eot');
+    src: local('Lufga Black'), local('Lufga-Black'),
+        url('/fonts/lufga/Lufga-Black.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Black.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Black.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-LightItalic.eot');
+    src: local('Lufga Light Italic'), local('Lufga-LightItalic'),
+        url('/fonts/lufga/Lufga-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-LightItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-LightItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Regular.eot');
+    src: local('Lufga Regular'), local('Lufga-Regular'),
+        url('/fonts/lufga/Lufga-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Regular.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Regular.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-ExtraBold.eot');
+    src: local('Lufga ExtraBold'), local('Lufga-ExtraBold'),
+        url('/fonts/lufga/Lufga-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-ExtraBold.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-ExtraBold.woff') format('woff'),
+        url('/fonts/lufga/Lufga-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Light.eot');
+    src: local('Lufga Light'), local('Lufga-Light'),
+        url('/fonts/lufga/Lufga-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Light.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Light.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-BoldItalic.eot');
+    src: local('Lufga Bold Italic'), local('Lufga-BoldItalic'),
+        url('/fonts/lufga/Lufga-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-BoldItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-BoldItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-ExtraLightItalic.eot');
+    src: local('Lufga ExtraLight Italic'), local('Lufga-ExtraLightItalic'),
+        url('/fonts/lufga/Lufga-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-ExtraLightItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-ExtraLightItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Bold.eot');
+    src: local('Lufga Bold'), local('Lufga-Bold'),
+        url('/fonts/lufga/Lufga-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Bold.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Bold.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-MediumItalic.eot');
+    src: local('Lufga Medium Italic'), local('Lufga-MediumItalic'),
+        url('/fonts/lufga/Lufga-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-MediumItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-MediumItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Italic.eot');
+    src: local('Lufga Italic'), local('Lufga-Italic'),
+        url('/fonts/lufga/Lufga-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Italic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Italic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-SemiBold.eot');
+    src: local('Lufga SemiBold'), local('Lufga-SemiBold'),
+        url('/fonts/lufga/Lufga-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-SemiBold.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-SemiBold.woff') format('woff'),
+        url('/fonts/lufga/Lufga-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-SemiBoldItalic.eot');
+    src: local('Lufga SemiBold Italic'), local('Lufga-SemiBoldItalic'),
+        url('/fonts/lufga/Lufga-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-SemiBoldItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-ThinItalic.eot');
+    src: local('Lufga Thin Italic'), local('Lufga-ThinItalic'),
+        url('/fonts/lufga/Lufga-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-ThinItalic.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-ThinItalic.woff') format('woff'),
+        url('/fonts/lufga/Lufga-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/lufga/Lufga-Thin.eot');
+    src: local('Lufga Thin'), local('Lufga-Thin'),
+        url('/fonts/lufga/Lufga-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/lufga/Lufga-Thin.woff2') format('woff2'),
+        url('/fonts/lufga/Lufga-Thin.woff') format('woff'),
+        url('/fonts/lufga/Lufga-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
