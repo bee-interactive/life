@@ -7,9 +7,9 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <link rel="stylesheet" href="{{ mix('css/app.min.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app.min.css') }}?v=83297298">
 
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js') }}?v=83297298" defer></script>
 
         <script src="https://kit.fontawesome.com/9476028306.js" crossorigin="anonymous"></script>
 
