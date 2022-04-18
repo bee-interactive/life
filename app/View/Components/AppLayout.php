@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Board;
 use Illuminate\View\Component;
 
 class AppLayout extends Component
@@ -13,6 +14,10 @@ class AppLayout extends Component
      */
     public function render()
     {
-        return view('layouts.app');
+        $boards = Board::get();
+
+        return view('layouts.app', [
+            'boards' => $boards
+        ]);
     }
 }

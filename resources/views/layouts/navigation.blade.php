@@ -4,7 +4,7 @@
         <div class="flex w-full justify-center items-center">
             <h1 class="text-xl text-center font-semibold text-life-dark-gray">{{ Auth::user()->name }}</h1>
         </div>
-        <p class="text-center text-sm text-[#82868a]">Vous avez 124 éléments enregistrés</p>
+        <p class="text-center text-sm text-[#82868a]">{{ auth()->user()->countBookmarks() }}</p>
     </div>
 
     <!-- Responsive Navigation Menu -->

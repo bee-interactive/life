@@ -10,14 +10,24 @@
         <link rel="stylesheet" href="{{ mix('css/app.min.css') }}">
 
         <script src="{{ mix('js/app.js') }}" defer></script>
+
+        <script src="https://kit.fontawesome.com/9476028306.js" crossorigin="anonymous"></script>
+
+        @livewireStyles
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-life-gray">
-            @include('layouts.navigation')
+        @if($boards->isEmpty())
+            @livewire('app.on-boarding')
+        @else
+            <div class="min-h-screen bg-life-gray">
+                @include('layouts.navigation')
 
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+                <main>
+                    {{ $slot }}
+                </main>
+            </div>
+        @endif
+
+        @livewireScripts
     </body>
 </html>

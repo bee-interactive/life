@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -41,4 +43,31 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function boards() : HasMany
+    {
+        return $this->hasMany(Board::class)->withCount('bookmarks');
+    }
+
+    public function countBookmarksRelations()
+    {
+        $count = 0;
+
+        foreach ($this->boards as $board) {
+            $count += $board->bookmarks_count;
+        }
+
+        return $count;
+    }
+
+    public function countBookmarks()
+    {
+        if ($this->bookmarks_count > 1) {
+            return 'You have ' . $this->bookmarks_count . ' saved elements';
+        } elseif ($this->bookmarks_count == 1) {
+            return 'You have ' . $this->bookmarks_count . ' element saved';
+        }
+
+        return 'You don’t have any items yet';
+    }
 }
