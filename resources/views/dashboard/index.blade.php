@@ -1,6 +1,10 @@
 <x-app-layout>
     <div class="pt-6 pb-32">
         <div class="max-w-7xl mx-auto px-8">
+            <div class="mb-8">
+                <x-input id="search" placeholder="Search for anything that you have saved" class="block w-full" type="text" name="search" :value="old('search')" required autocomplete="search" />
+            </div>
+
             <div class="grid grid-cols-2 gap-x-5 gap-y-5">
                 @foreach(auth()->user()->boards as $board)
                     <a href="{{ $board->path() }}" class="rounded-xl bg-white text-gray-900 group flex flex-col justify-between hover:bg-life hover:shadow-md custom-shadow p-5">
@@ -9,6 +13,10 @@
                         <p class="pt-2 text-xs text-[#9c9c9e] group-hover:text-white">{{ $board->countBookmarks() }}</p>
                     </a>
                 @endforeach
+
+                <a href="{{ route('boards.create') }}" class="rounded-xl bg-transparent text-center text-gray-500 border-4 items-center border-gray-400/50 border-dashed group flex justify-center hover:border-life/90 hover:bg-gray-100 custom-shadow p-5">
+                    <h2 class="font-medium leading-5 group-hover:text-life">Add a<br>new board</h2>
+                </a>
             </div>
         </div>
     </div>

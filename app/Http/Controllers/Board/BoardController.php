@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Board;
 
 use App\Models\Board;
+use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
+use App\Domain\Board\BoardAggregateRoot;
 use App\Http\Requests\StoreBoardRequest;
 use App\Http\Requests\UpdateBoardRequest;
 
@@ -37,7 +39,15 @@ class BoardController extends Controller
      */
     public function store(StoreBoardRequest $request)
     {
-        //
+        $newUuid = Str::uuid()->toString();
+
+        $board = BoardAggregateRoot::retrieve($newUuid)
+            ->createBoard($request->safe()->name, $request->safe()->color, $request->safe()->icon)
+            ->persist();
+
+        $this->success(__('The board has been created!'));
+
+        return redirect()->route('boards.edit', Board::where('uuid', $board->uuid())->first());
     }
 
     /**
@@ -59,7 +69,9 @@ class BoardController extends Controller
      */
     public function edit(Board $board)
     {
-        return view('boards.edit');
+        return view('boards.edit', [
+            'board' => $board
+        ]);
     }
 
     /**

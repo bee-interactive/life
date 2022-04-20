@@ -17,3 +17,19 @@ use Illuminate\Support\Str;
             return auth()->user();
         }
     }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Flash session helper
+    |--------------------------------------------------------------------------
+    |
+    | Generate the flash message helper
+    |
+    */
+
+    if (!function_exists('flash')) {
+        function flash(array $attributes = []) : void
+        {
+            session()->flash('flash', $attributes);
+        }
+    }
